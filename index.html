@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/theme-monokai.min.css" integrity="sha384-kbkiJbAZ7lo4f0M7GM6iz2xFKd/Zn++DS0Pl4X3zr60JJn5HHQoMSz6R35T61akL" crossorigin="anonymous">
+  <title>Collaborative Code Editor</title>
+</head>
+<body>
+  <div class="container">
+    <div class="editor-container">
+      <div id="editor"></div>
+    </div>
+    <div class="cursor-indicators"></div>
+  </div>
+  <div class="auth-forms">
+    <div id="register-form">
+      <input type="text" id="register-username" placeholder="Username">
+      <input type="password" id="register-password" placeholder="Password">
+      <button type="button" id="register-button">Register</button>
+      <div id="register-feedback" class="feedback"></div>
+    </div>
+    <div id="login-form">
+      <input type="text" id="login-username" placeholder="Username">
+      <input type="password" id="login-password" placeholder="Password">
+      <button type="button" id="login-button">Login</button>
+      <div id="login-feedback" class="feedback"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.js"></script>
+  <script src="main.js"></script>
+  <script src="authentication.js"></script>
+</body>
+</html>
